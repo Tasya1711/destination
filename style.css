@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.destination__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 480px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 55% / 25%;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.destination__photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.destination__info {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+  .destination__word {
+    font-size: 12px;
+  }
+
+  .destination__name {
+    font-weight: 400;
+  }
+
+  .destination__date,
+  .destination__price {
+    font-size: 16px;
+  }
+}
+
+.destination__pay {
+  text-align: center;
+
+  .destination__button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .destination__text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+  }
+}
